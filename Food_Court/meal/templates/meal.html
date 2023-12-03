@@ -1,0 +1,23 @@
+{% extends "base.html" %} {%block part%}
+<h1 class="mb-3 mt-3">Menu Card</h1>
+
+<div class="container">
+  <div class="row">
+    {%for i in data%}
+    <div class="col-4 mb-3">
+      <div class="card" style="width: 18rem">
+        <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3>Item Name : {{i.strCategory}}</h3>
+          <h5 class="card-title">Item ID : {{i.idCategory}}</h5>
+          <p class="card-text">
+            {{i.strCategoryDescription |truncatechars:10}}
+          </p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %} {%load static%} {%block css%}
+<link rel="stylesheet" href="{%static 'css/style.css'%}" />
+{% endblock %} {%block part%}
+<div class="home">
+  <h1 class="head">FOOD COURT</h1>
+  <div class="home_container">
+    <div class="about_text">
+      <h1>Welcome to Our <span class="name">FOOD COURT</span></h1>
+      <div class="about_home">
+        <h2>This is Food Court . We serve testy and delicious foods .</h2>
+        <p>
+          <strong
+            >We invite you to experience the culinary magic of Food Court. Let
+            us transport you to a world of delectable flavors and unforgettable
+            dining experiences.</strong
+          >
+        </p>
+      </div>
+    </div>
+    <div class="img_container">
+      <img src="{%static 'images/food.jpeg'%}" alt="" srcset="" />
+    </div>
+  </div>
+</div>
+{% endblock %}
